@@ -300,3 +300,135 @@ main, nav, aside, footer, section, article, header {
 	position: fixed;
 	bottom: 0px;
 	background-color: #d6d6d6;
+}
+
+/*******************************************************/
+
+
+
+#wrapper3 {
+	margin: 0px auto;
+	width: 1000px;
+}
+#wrapper3 header{
+	
+	height:192px;
+	background: #d6d6d6;
+
+}
+
+#wrapper3 header a{
+	
+	width:102px;
+	height:102px;
+	background-image:url("../images/star.png");
+	position:relative;
+	display:block;
+	margin:0px auto;
+	top: 40px;
+    background-repeat: no-repeat;	
+	
+	
+}
+
+
+#wrapper3 nav {
+	
+	height: 63px;
+	background: #337AB7;
+
+}
+
+#wrapper3 nav ul{
+	
+	list-style-type: none;
+	text-decoration: none;
+	margin-left: 45px;
+	
+}
+
+#wrapper3 nav ul li{
+	
+	float:left;
+	
+}
+
+#wrapper3 nav a{
+	
+	display: inline-block;
+	text-decoration: none;
+	color: #ffeedd;
+	font-family: Arial;
+	
+	
+	
+}
+
+#wrapper3 nav span a{
+	
+	background:#003748;
+	margin:10px auto; 
+	padding:12px 90px;
+	
+	
+}
+#wrapper3 nav li > a{
+	
+	margin:20px 85px;
+	
+}
+
+
+
+
+
+#wrapper3 {
+	
+	height:52px;
+	background: #D6D6D6;
+	margin-top:-4px;
+	
+   /* margin-top: 1740px;???????*/
+ /*bottom: 0px;
+  position: fixed;*/
+	
+}
+
+#wrapper3 .box{
+   
+    float: left;
+    width: 333.33px;
+    height: 348px;
+  
+           
+   }
+   
+            
+            
+#wrapper3 .box.plus{
+            background: url(../images/white_plus.png) center no-repeat;
+        }
+           
+#wrapper3 .box.star {
+            
+     background: url(../images/white_star.png) center no-repeat;        
+}
+
+ @media only screen and (min-width: 1000px) { 
+        
+        #wrapper3 {width:1000px;} 
+    }
+ @media only screen and (max-width:1000px){
+    	#wrapper3 {width:666.66px;} 
+ 
+   	}
+    	 #wrapper3 nav ul{
+    	 	margin-left: 0px;
+    	}
+    	 #wrapper3 nav span a{padding:12px 55px;}
+    }
+
+.clear{
+	
+	clear: both;
+}
