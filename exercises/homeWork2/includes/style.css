@@ -3,10 +3,16 @@
 	padding: 0px; 
 }
 
-main, nav, aside, footer, section, article, header {
+ nav, aside, section, article, header {
 	display:  block;
 	
 }
+
+main{
+	
+	width: 100%;
+}
+
 
 #wrapper {
 	margin: 0px auto;
@@ -378,18 +384,16 @@ main, nav, aside, footer, section, article, header {
 	
 }
 
-
-
-
-
-#wrapper3 {
+#wrapper3 footer {
 	
 	height:52px;
 	background: #D6D6D6;
-	margin-top:-4px;
+	display: inline-block;
+	width: 100%;
+	/*margin-top:-4px;
 	
    /* margin-top: 1740px;???????*/
- /*bottom: 0px;
+ 	/*bottom: 0px;
   position: fixed;*/
 	
 }
@@ -398,15 +402,13 @@ main, nav, aside, footer, section, article, header {
    
     float: left;
     width: 333.33px;
-    height: 348px;
-  
-           
+    height: 348px;  
    }
    
             
             
 #wrapper3 .box.plus{
-            background: url(../images/white_plus.png) center no-repeat;
+            background: url(../images/white_plus.png) center no-repeat; 
         }
            
 #wrapper3 .box.star {
@@ -429,6 +431,5 @@ main, nav, aside, footer, section, article, header {
     }
 
 .clear{
-	
 	clear: both;
 }
