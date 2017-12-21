@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="includes/style.css" >
+	</head>
+	<header> <h1>Become Fcbarcelona Member</h1></header>
+	
+	<body>
+		<div class="wrapper">
+		<form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get" autocomplete="on"><br >
+			<label>1.FullName &nbsp;<input type="text"  name="fullName" required /></label><br>
+			<br />
+			<label>2.password &nbsp;&nbsp;<input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z]).{8,15}" required />
+				<h4>  Must be 8-12 character.<br>
+                    Must contain at least one number, one lowercase letter.</h4>
+			</label>
+			<br>
+			<label>3.mail &nbsp;&nbsp;<input type="email" name="mail" autocomplete/></label><br>
+			<br />
+			<label>4.website &nbsp;&nbsp;<input type="url" name="website"/></label><br>
+			<br /> 
+			<label>5.phone &nbsp;&nbsp;<input type="tel" name="phone" pattern='[\+]\d{3}[\(]\d{3}[\)]\d{3}[\-]\d{4}'><br />
+				<h3> phone number format like +(972)(052)547-3074</h3>
+				
+			</label><br>
+			<br />
+			<label>6.favorit player number &nbsp;&nbsp;<input type="number" name="coffee" value="" min="1" /></label> <br>
+			
+			<br />
+			<label>6.How much you love barcelona &nbsp;&nbsp;&nbsp;&nbsp;0 <input  type="range" name="temper" value="5" min="0" max="10">10
+			</label><br>
+			
+			
+			<br />
+			<label>7.Address &nbsp;&nbsp;<br /> <textarea rows="2" cols="8" name="address" >insert address</textarea>  </label> <br> 
+			<br />
+			<label> 10.hoppies &nbsp;&nbsp;</label><br />
+			<input type="checkbox" name="interests[]" value="Gym" /> <label>Gym &nbsp;&nbsp; </label><br>
+			<input type="checkbox" name="interests[]" value="Football" checked="" /> <label>Football &nbsp;&nbsp; </label><br>
+			<input type="checkbox" name="interests[]" value="WebDev" /> <label>WebDev &nbsp;&nbsp; </label><br>
+			<label>11.Gender &nbsp;&nbsp;<br /><input type="radio" name="gender" value="male" checked />Male <br>
+				<input type="radio" name="gender" value="female"  />Female <br>
+				<input type="radio" name="gender" value="other"  />Others </label><br>
+				
+				<br />
+				
+				<label>12.Age &nbsp;&nbsp; <br /><select name="age" multiple><br>
+					<br>
+					<option selected="">27</option>
+					<option>36</option>
+					<option>42</option>
+					<option>19</option>
+					<option>56</option>
+					<option>99</option>
+				</select></label>
+				<br />
+				<br />
+				
+			<input type="submit"  value="join"/>
+        </form >
+		</div>
+	</body>
+	
+	
+	
+	
+</html>
