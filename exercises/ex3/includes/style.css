@@ -1,1 +1,90 @@
+ body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
 
+.wrapper label{
+   	color:red;
+}
+  
+.wrapper h4{
+ 	color: #8484A0;
+} 
+  
+  .wrapper h3{
+  	color: #8484A0;
+}
+  
+.wrapper{
+	text-align: left;
+	font-size: 120%;
+	background-image:url("../images/barcaLogo.jpg");
+	margin: auto;
+	width: 1000px;
+	border-radius:35px;
+	padding: 1em; 
+}
+
+h1{
+	text-align: center;
+	color:#660099;
+	font-size: 50px;
+}
+
+
+.nodes{
+
+   font-size:24px;
+	
+}
+
+.wrapper label {
+   font-size: 20px;
+   font-weight: normal;
+   font-weight: bold;
+}
+
+.wrapper textarea{
+	
+	  width: 200px;
+     height: 100px;
+    overflow: hidden;
+    /*overflow: auto; it's not working!!! */
+    
+    
+}
+
+.wrapper input[type="submit"]{
+	text-align:center;
+	font-size: 40px;
+	font-weight: bold;
+    font-weight: normal;
+    border-radius:25px;
+    background: #8484A0;
+   width:25%;
+}
+
+.wrapper input[type="text"],
+.wrapper input[type="Password"],
+.wrapper input[type="email"],
+.wrapper input[type="url"],
+.wrapper input[type="tel"],
+.wrapper input[type="number"],
+.wrapper input[type="range"],
+.wrapper input[type="chekbox"],
+.wrapper input[type="radio"],
+.wrapper select,
+.wrapper textarea {
+	
+    font-size: 20px;
+    font-weight: normal;
+    border-radius:5px;
+    color:#660099;
+}
+  
+
+
+  
+	
