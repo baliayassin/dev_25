@@ -1,0 +1,522 @@
+*{
+	padding: 0px;
+  margin: 0px;
+}
+
+
+header,
+footer,
+aside,
+section,
+main,
+div,
+article, {
+	display: block;
+}
+
+#wrapper{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+  
+}
+
+
+ header {
+	background: #444444;
+  height: 100px;
+
+}
+
+#logo{
+  top:-25px;
+  float: right;
+	background-image: url("../images/logo.png");
+	position: relative;
+	width: 120px;
+	height: 120px;
+}
+
+
+#hamburger {
+  display: none;
+  position: relative;
+  top: 25px;
+  float: right;
+  right: 10px;
+  z-index: 6;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#hamburger input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 7;
+  -webkit-touch-callout: none;
+}
+
+#hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #696969;
+  border-radius: 0px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#hamburger span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#hamburger span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+
+/*hamburger animation*/
+
+#hamburger input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#hamburger input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#hamburger input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#hamburger_menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0px;
+  padding-right: 50px;
+  padding-top: 5px;
+  background: #ffffff;
+  transform-origin: 0% 0%;
+  transform: translate(0, -1200%);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#hamburger_menu li:not(:first-child) a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgba(49, 49, 49, 0.753);
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  display: inline-block;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 5px;
+  padding-left: 25px;
+  border-bottom: 1px solid rgba(156, 156, 156, 0.425);
+  overflow: auto;
+  text-align: right;
+}
+
+#hamburger_menu li:not(:first-child):hover a {
+  color: whitesmoke;
+  text-transform: uppercase;
+  background: #383736;
+}
+
+#hamburger input:checked~ul {
+  transform: none;
+}
+
+#logedIn  h4{
+color: #ffffff;
+float: left;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+}
+
+#circle{
+  border: 2px solid #F9CF03;
+  border-radius:  20px;
+  padding: 10px;
+
+}
+
+#logedIn div{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #444444;
+  display: inline;
+  text-align: center;
+  padding-right: 3px;
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+  
+}
+
+
+#logedIn button{
+  float: left;
+}
+
+header h4{
+  display: inline;
+  
+}
+
+.h4color{
+  color:#F9CF03;
+}
+header span{
+  color: #626263;
+}
+
+header button{
+      margin-left: 10px;
+      margin-top: 10px;
+      height: 18px;
+      width: 60px;
+      font-weight: bold;
+      border: 1px solid #000;
+      background-color: #F9CF03;
+}
+header input{
+  width: 100px;
+    background: #626263;
+    height: 17px;
+    border: 1px solid #000;
+    margin-left: 2px;
+    line-height: 12px;
+    font-size: 12px;
+    text-align: right;
+    color: #ffffff;
+    padding-right: 10px;
+}
+
+ header nav{
+  width: 100%;
+  margin: 0px auto;  
+  margin-top: 30px;
+  text-align: center;
+  
+}
+
+::-webkit-input-placeholder{
+  color: #88888A;
+}
+
+#search{
+margin-left: 20px;
+margin-top: 35px;
+}
+#search input{
+  border-radius: 5px;
+  border-color: #88888A;
+  text-align: right;
+}
+nav ul {
+
+  margin: 0px 90px;
+}
+nav ul li{
+  display: inline;
+  padding-left: 13px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+li a:hover{color:#F9CF03;}
+
+.leftAside{
+  float: left;
+  width: 25%;
+  height: 700px;
+  background-color: #5F5F60;
+}
+
+.rightAside{
+  background-color: #5F5F60;
+  width:25%;
+  height: 700px;
+  float: right;
+}
+
+#container{
+  background: #5F5F60;
+  width: 100%;
+  height: 1130px;
+}
+
+main{
+  background-color: #5F5F60;
+  width: 500px;
+  float: left;
+}
+
+.myGames{
+  border: 1px solid black;
+  width: 82%;
+  margin: 0px auto;
+  margin-top: 20px;
+  font-family: Arial;
+}
+.myGames >div:nth-child(1){
+background: #f9cf03;
+color: #000000;
+height: 26px;
+padding: 0px 6px;
+text-align: right;
+}
+.myGames >div:nth-child(2){
+  text-align: right;
+  padding: 0px 6px;
+  padding-top: 10px;
+}
+
+.myGames p:nth-child(2){
+  padding-top: 5px;
+  color:#ffffff;
+}
+
+.myGames p:nth-child(3){
+  color:#ffffff;
+  padding-bottom: 10px;
+}
+
+main > img:nth-child(1){
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#allGames{
+  background: #88888a;
+}
+
+#allGames > div:nth-child(1){
+  background: #ed1c24;
+  color: #ffffff;
+  text-align: right;
+  padding-right: 5px;
+  height: 20px;
+  border-radius: 3px;
+  padding-top: 5px;
+  font-family: Arial;
+}
+
+#allGames > div:nth-child(2){
+background: #444444;
+color: #ffffff;
+text-align: right;
+padding-right: 5px;
+height: 20px;
+padding-top: 5px;
+font-family: Arial;
+margin-bottom: 20px;
+}
+
+main nav{
+  height: 60px;
+  background: #2b2b2b;
+}
+
+.likeFooter div{
+  width: 98px;
+  height: 58px;
+  float: right;
+  color: #747474;
+  text-align: center;
+  font-family: arial;
+  border: 1px solid #000;
+}
+  
+.likeFooter div h4{
+  padding-top: 38px;
+}
+
+.likeFooter img:nth-child(1){
+  margin: 0px auto;
+  padding-top: 10px;
+}
+  
+.likeFooter h4:nth-child(2){
+  padding-top: 3px;
+}
+
+#gamesCounter{
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  background: #747474;
+  margin: 6px 38px;
+}
+
+.groupNumber1{
+  width: 75%;
+  background: #252426;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+.groupNumber1 > div:nth-child(1){
+background: #2c2c2c;
+width: 100%;
+text-align: center;
+font-family: Arial;
+color: #ffffff;
+}
+
+.mohnd > div:nth-child(1){
+float: right;
+margin: 13px 13px;
+}
+
+.mohnd > div:nth-child(2){
+  color: #f9cf03;
+  font-family: Arial;
+  float: right;
+  padding-top: 34px;
+}
+
+.games div{
+  width: 180px;
+margin: 0px auto;
+}
+
+.groupNumber1 > div:nth-child(4){
+  width: 80%;
+  margin: 0px auto;
+  color: #f9cf03;
+}  
+
+.info h5{
+text-align: center;
+padding-top: 13px;
+text-align: center;
+}
+
+.info div{
+  width: 90px;
+  margin: 0px auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+
+.info button{
+  width: 90px;
+  height: 30px;
+  background-color: #01af10;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+
+ #table{
+  
+    padding-left: 10px;
+    color: #ffffff;
+    background: #88888A;
+    width:60%;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    
+   
+  }
+
+  thead{
+
+    padding-bottom: 5px;
+  }
+  td{
+    padding-bottom: 10px;
+    padding-left: 10px;
+  
+  }
+ 
+  th{
+     padding-top: 5px;
+     padding-bottom: 5px;
+    padding-left: 5px;
+  }
+  #table thead tr{
+    border: 1px solid #ffffff;  
+    color: #000000;
+   
+    
+  }
+
+.leftGame  button{
+background: yellow;
+display: inline;
+float: right;
+}
+  
+  #openedGroups{
+  
+    color: #ffffff;
+    border: 0.3px solid #88888A;
+    text-align: center;
+    margin: 0px auto;
+    width:160px;
+    background: #5F5F60;
+    margin-top: 30px;
+
+  }
+
+
+@media only screen and (max-width:999px) {
+header nav{
+  display: none;
+}
+.leftAside{
+  display: none;
+}
+.rightAside{
+  display: none;
+}
+header div{
+  display: none;
+}
+#logo{
+  float: left;
+}
+.likeFooter{
+  display: block;
+}
+#hamburger{
+  display: block;
+}
+#hamburger_menu {
+  display: block;
+}
+main > img:nth-child(1){
+  display: none;
+}
+#container{
+  height: 826px;
+}
+}
